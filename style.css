@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #0077b6;
+}
+
+body {
+  background-color: #ddd;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.primaryBtn {
+  color: #fff;
+  background-color: var(--blue);
+  padding: 9px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.container .column {
+  background-color: #fff;
+  width: 250px;
+  height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container .column .head {
+  background-color: var(--blue);
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.container .column .body .addBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 7px 15px;
+  border: 1px solid;
+  background-color: none;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.container .column .body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.container .column .body .card {
+  background-color: #eee;
+  border-radius: 7px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.container .column .body .cardslist {
+  height: 90%;
+  border-radius: 10px;
+}
+
+#modal{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal .box{
+  background-color: #fff;
+  width: 400px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+#modal .box .head{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 28px;
+  border-bottom: 1px solid black;
+}
+
+#modal .box .head span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+#modal .box .head button {
+  border: none;
+  background: none;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #333;
+}
+
+#modal .box .form {
+  padding: 20px;
+}
+
+#modal .box .form .form-group {
+  margin-bottom: 15px;
+}
+
+#modal .box .form label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+}
+
+#modal .box .form input,
+#modal .box .form select,
+#modal .box .form textarea {
+  width: 100%;
+  border-radius: 7px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #999;
+  color: #333;
+}
+#modal .box .form input,
+#modal .box .form select {
+  padding: 10px;
+}
+#modal .box .form button {
+  display: block;
+  margin-left: auto;
+}
+
+.is-dragging {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.is-over {
+  background-color: #4cd13711;
+}
+
+.highlight {
+  transition: 0.4;
+  background-color: #0077b629;
+}
